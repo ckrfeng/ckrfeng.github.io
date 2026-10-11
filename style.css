@@ -17,6 +17,7 @@ body {
     flex-wrap: wrap;
     background-color: #004d40;
     padding: 0.5em;
+    line-height: normal;
 }
 
 .navbar a {
@@ -27,16 +28,14 @@ body {
     text-align: center;
     white-space: nowrap;
     padding: 0.5em 1em;
-    border-radius: 4px;
 }
 
 .navbar a:hover {
     text-decoration: underline;
 }
 
-/* The current page's tab is highlighted via aria-current="page" in the HTML */
+/* The current page's tab is underlined via aria-current="page" in the HTML */
 .navbar a[aria-current="page"] {
-    background-color: #00332b;
     text-decoration: underline;
 }
 
@@ -154,10 +153,6 @@ p.big {
 
 /* Phones */
 @media (max-width: 600px) {
-    .navbar a {
-        padding: 0.6em 0.5em;
-    }
-
     .container {
         margin: 1.5em auto;
     }
