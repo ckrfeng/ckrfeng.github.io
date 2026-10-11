@@ -1,0 +1,181 @@
+/* Shared styles for every page. Colors and fonts follow the same look as the reference site. */
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Top navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #004d40;
+    padding: 0.5em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    flex: 1 1 auto;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* The current page's tab is highlighted via aria-current="page" in the HTML */
+.navbar a[aria-current="page"] {
+    background-color: #00332b;
+    text-decoration: underline;
+}
+
+/* Page layout */
+.container {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 16px;
+}
+
+h1 {
+    color: #2e7d32;
+}
+
+h2 {
+    color: #333333;
+}
+
+p.big {
+    line-height: 1.5;
+}
+
+.section-style {
+    margin: 2em 0;
+}
+
+.section-style h2 {
+    color: #333333;
+}
+
+.placeholder {
+    color: #888888;
+    font-style: italic;
+}
+
+/* Home page card: text on the left, profile photo on the right */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 2em;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    flex-shrink: 0;
+    margin-left: 2em;
+}
+
+/* Uses a background image so a missing profile.jpg shows an empty circle, not a broken-image icon */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+    background-color: #dddddd;
+    background-image: url("profile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Project cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+}
+
+.card h2 {
+    color: #2e7d32;
+    margin: 0 0 0.5em 0;
+    font-size: 1.3em;
+}
+
+.card p {
+    margin: 0 0 1em 0;
+}
+
+.card .tools {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+}
+
+.card .tools li {
+    background-color: #e0ece9;
+    color: #004d40;
+    font-size: 0.85em;
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+}
+
+.card .card-link {
+    margin-top: auto;
+    color: #004d40;
+    font-weight: bold;
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .navbar a {
+        padding: 0.6em 0.5em;
+    }
+
+    .container {
+        margin: 1.5em auto;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.25em;
+        gap: 1em;
+    }
+
+    /* Photo goes above the text on small screens */
+    .profile-picture {
+        order: -1;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
