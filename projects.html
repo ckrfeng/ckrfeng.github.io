@@ -1,44 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Carter Feng</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0eb">
+  <meta name="description" content="Carter Feng — mathematics, research, projects, and the things in between.">
+  <title>Projects | Carter Feng</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bodoni-moda-700.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/pt-serif-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/section-progress.js" defer></script>
 </head>
-<body>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
+<body class="interior indexed-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="sheet">
+    <header class="masthead">
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html" aria-current="page">Projects</a>
         <a href="education.html">Education</a>
         <a href="activities.html">Activities</a>
-        <a href="projects.html" aria-current="page">Projects</a>
         <a href="misc.html">Miscellaneous</a>
-    </nav>
-
-    <div class="container">
-        <h1>Projects</h1>
-
-        <div class="card-grid">
-            <article class="card">
-                <h2>Project Title</h2>
-                <p>Placeholder: a short description of what this project does and why it matters.</p>
-                <ul class="tools">
-                    <li>Tool 1</li>
-                    <li>Tool 2</li>
-                </ul>
-                <a class="card-link" href="#">View project &rarr;</a>
-            </article>
-
-            <article class="card">
-                <h2>Project Title</h2>
-                <p>Placeholder: a short description of what this project does and why it matters.</p>
-                <ul class="tools">
-                    <li>Tool 1</li>
-                    <li>Tool 2</li>
-                </ul>
-                <a class="card-link" href="#">View project &rarr;</a>
-            </article>
-        </div>
-    </div>
+      </nav>
+      <h1 class="section-masthead">Projects</h1>
+    </header>
+    <main id="main"><div class="page-heading"><p class="page-deck">Software, hardware, and experiments in machine learning.</p></div><div class="reading-column"><article class="entry numbered-entry" id="model-learner" data-scroll-entry data-active="false">
+        <div class="entry-aside"><span class="entry-number" aria-hidden="true">01</span><p class="entry-meta">August – October 2026 · Evidence-based AI-agent learning</p></div>
+        <div class="entry-content"><h2>Model Learner</h2><p>A local system that learns from AI coding-agent executions using <strong>independently verified task outcomes</strong>. It keeps versioned data records and reproducible execution histories, with automated test verification.</p><p>I developed hierarchical Bayesian models to predict agent success across tasks and configurations, testing uncertainty, calibration, and distribution shift with chronological experiments that avoid using future outcomes.</p><p>The system also uses task-similarity retrieval and cost-aware agent recommendations. I integrated it with the Suffice coding-agent harness and validated the combined workflow with <strong>483 automated tests</strong>.</p></div>
+      </article><article class="entry numbered-entry" id="ecc-compiler" data-scroll-entry data-active="false">
+        <div class="entry-aside"><span class="entry-number" aria-hidden="true">02</span><p class="entry-meta">June – October 2026 · Finite-field &amp; elliptic-curve hardware compilation</p></div>
+        <div class="entry-content"><h2>ECC Compiler</h2><p>A compiler that translates finite-field operations and elliptic-curve point and scalar arithmetic into serial hardware state machines. It generates <strong>SystemVerilog and Calyx</strong> implementations over the small fields F<sub>17</sub> and F<sub>19</sub>, allowing exhaustive verification.</p><p>I checked <strong>4,477 hardware transactions</strong> and <strong>120 abort/recovery tests</strong> against independent arithmetic references, and formally verified bounded completion for a Calyx multiplier.</p><p>Register allocation and arithmetic scheduling improvements reduced declared storage by <strong>38.6% for point addition</strong> and <strong>36.3% for scalar multiplication</strong>, while also reducing execution latency.</p></div>
+      </article><article class="entry numbered-entry" id="shortcut-lens" data-scroll-entry data-active="false">
+        <div class="entry-aside"><span class="entry-number" aria-hidden="true">03</span><p class="entry-meta">September – October 2026 · Causal reliability of SAE explanations</p></div>
+        <div class="entry-content"><h2>Shortcut Lens</h2><p>A controlled MNIST image-classification benchmark investigating whether sparse autoencoders correctly explain the features a neural network actually relies on. The benchmark uses matched counterfactual images and independently controlled correlations.</p><p>I trained classifiers and sparse autoencoders, then compared causal feature interventions against supervised directions, PCA, and random baselines to measure causal influence, specificity, and preservation of task performance.</p></div>
+      </article><article class="entry numbered-entry" id="local-graph-assistant" data-scroll-entry data-active="false">
+        <div class="entry-aside"><span class="entry-number" aria-hidden="true">04</span><p class="entry-meta">August – September 2026 · Collaborative project</p></div>
+        <div class="entry-content"><h2>Local Graph Assistant</h2><p>An LLM-based application for navigating structured data. I co-trained Qwen3 0.6B and 1.7B LoRA models; the 1.7B model achieved <strong>93.3% exact accuracy</strong> and <strong>98% same-record accuracy</strong> on internal benchmarks.</p><p>I collaborated on a 16-crate Rust application with encrypted local storage, hybrid retrieval, and permission-controlled access to structured data.</p></div>
+      </article><section class="skills-section" aria-labelledby="skills-title"><h2 id="skills-title">Tools I work with</h2><dl class="skills-list"><dt>Languages</dt><dd>Java, Python, C++, Lean, HTML, Rust, SystemVerilog, JavaScript, LaTeX</dd><dt>Tools &amp; libraries</dt><dd>PyTorch, TensorFlow, NumPy, SciPy, Calyx, PyUncertainNumber, Git, Neovim, Linux, SQLite, Docker, MATLAB</dd></dl></section><p class="end-link"><a href="https://github.com/ckrfeng">More on GitHub ↗</a></p></div>
+    </main>
+    <footer class="colophon">
+      <p class="signature">Carter Feng</p>
+      <div class="contact-links"><a href="mailto:ckrfeng@gmail.com">Email</a><a href="https://github.com/ckrfeng">GitHub ↗</a><a href="https://www.linkedin.com/in/carterfeng/">LinkedIn ↗</a></div>
+    </footer>
+  </div>
 </body>
 </html>
