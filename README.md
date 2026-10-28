@@ -8,7 +8,8 @@ Run `python3 -m http.server 8000` from this folder, then open http://localhost:8
 
 ## Content
 
-- `index.html`: editorial introduction on the left, contents/current work/contact and the original portrait in a right-hand rail, two work highlights, and a Ross feature.
+- `index.html`: default text-only homepage with the complete portfolio and a Designed version link.
+- `designed.html`: editorial introduction, original portrait, contents rail, selected work, and Ross feature.
 - `research.html`: all four independent research entries from the supplied résumé.
 - `projects.html`: all four technical projects and the technical skills list.
 - `education.html`: Seven Lakes, the Ross Mathematics Program, and Ross photographs.
@@ -38,4 +39,4 @@ Projects and Research use 01–04 markers in a left-hand column, with metadata b
 
 ## Text version
 
-`text/index.html` is a separate single-page version inspired by https://motherfuckingwebsite.com/. It uses browser-default HTML, with no CSS, JavaScript, web fonts, or embedded images. All existing research, projects, education, activities, results, and skills are included; photographs are available through ordinary links. Preview at http://localhost:8000/text/. The designed site links to it in the footer.
+The default `index.html` is the plain HTML version inspired by https://motherfuckingwebsite.com/. It uses browser-default HTML, with no CSS, JavaScript, web fonts, or embedded images. All existing research, projects, education, activities, results, and skills are included; photographs are available through ordinary links. The Designed version link opens `designed.html`, and the designed pages link back to the default text homepage. `text/index.html` remains available for existing `/text/` bookmarks and section links. Preview the default at http://localhost:8000/ and the designed homepage at http://localhost:8000/designed.html.
