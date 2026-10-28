@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Carter Feng. Mathematics, machine learning, research, projects, education, and activities. Plain HTML version.">
+  <title>Carter Feng — Text version</title>
+</head>
+<body>
+  <header>
+    <h1 id="top">Carter Feng</h1>
+    <p><a href="mailto:ckrfeng@gmail.com">ckrfeng@gmail.com</a> | <a href="https://www.linkedin.com/in/carterfeng/">LinkedIn</a> | <a href="https://github.com/ckrfeng">GitHub</a> | <a href="../index.html">Designed version</a></p>
+    <nav aria-label="Contents">
+      <p><a href="#about">About</a> | <a href="#research">Research</a> | <a href="#projects">Projects</a> | <a href="#education">Education</a> | <a href="#activities">Activities</a> | <a href="#miscellaneous">Miscellaneous</a></p>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>I’m a Seven Lakes High School student interested in mathematics, machine learning, and dynamical systems.</p>
+
+          <p>Right now I’m studying dynamical systems at <a href="#cyclic-networks">Texas Southern University</a>, alongside independent work on sparse autoencoders and ergodic theory. I spent summer 2026 at the <a href="#ross">Ross Mathematics Program</a> and founded <a href="#stemjump">STEMJUMP</a> to bring STEM programs to younger students. I also compete with the Seven Lakes <a href="#science-olympiad">Science Olympiad</a> team.</p>
+
+      <h3>Now</h3>
+      <p>Studying the stability of cyclic networks, investigating sparse autoencoders, and teaching through STEMJUMP.</p>
+      <h3>Open to</h3>
+      <p>Research opportunities and internships in mathematics and machine learning. I’m still exploring different areas, so I’m open to a broad range of projects.</p>
+    </section>
+    <section id="research">
+      <h2>Research</h2>
+      <article id="sae-absorption">
+        <h3>Sparse autoencoder feature absorption</h3>
+<p>August 2026 – present · Independent research</p>
+<p>I built an exact two-feature population model of sparse autoencoders that separates statistical co-occurrence from geometric feature alignment. The model investigates how sparsity penalties and dictionary capacity influence feature separation and absorption.</p>
+<p>I derived normalization and scaling results for SAE objectives, identified a scaling degeneracy in unconstrained sparse reconstruction, and analyzed reconstruction–sparsity tradeoffs. The work distinguishes restricted candidate solutions from unrestricted global optima.</p>
+      </article>
+<article id="causal-recovery">
+        <h3>Finite-sample causal recovery from imperfect agent decisions</h3>
+<p>October 2026 – present · Independent research</p>
+<p>I proved matching query-complexity bounds for recovering causal structure from idealized noiseless, zero-regret agent decisions, using metric packing and minimax analysis.</p>
+<p>For imperfect decisions and corrupted observations, I derived information-theoretic lower bounds using binary-channel capacity and finite-sample recovery estimates, and created reproducible simulations to test recovery procedures.</p>
+      </article>
+<article id="cyclic-networks">
+        <h3>Stability and bifurcation in Wu Xing and directed cyclic networks</h3>
+<p>October 2025 – present · Student researcher, Texas Southern University</p>
+<p>At Texas Southern University, I develop modified Lotka–Volterra ordinary differential-equation models to investigate the dynamical stability of Wu Xing (five-element) networks. My analysis uses Fourier transforms, Green’s functions, and eigenvalue evaluations to study equilibria and robustness bounds.</p>
+<p>I also proved positivity and global boundedness and derived Jacobian eigenvalue spectra using discrete Fourier transforms and circulant linear algebra.</p>
+<p>I use XPPAUT and AUTO for numerical bifurcation analysis and phase-plane exploration, studying critical transitions, limit cycles, and stability thresholds. Python scripts support data analysis, statistical distribution modeling, and trajectory visualization.</p>
+<p>I established dominant-mode selection and local bifurcation criteria, then investigated stability and perturbation dynamics through 90 × 90 parameter-grid sweeps, numerical ODE simulations, and 1,200-draw paired experiments.</p>
+      </article>
+<article id="ergodic-averages">
+        <h3>Polynomial ergodic averages, Fourier analysis, and pointwise convergence</h3>
+<p>June 2026 – present · Independent research</p>
+<p>I’m investigating almost-everywhere convergence of bilinear ergodic averages along the polynomial pair n² and n² + n. I established convergence for rational-spectrum and periodic components and am analyzing the interaction of quadratic and linear Fourier frequency scales.</p>
+<p>I derived prime-modulus maximal estimates with p<sup>−1/4</sup>-type decay and power-of-two bounds of order (log q)<sup>1/2</sup>q<sup>−1/4</sup> using Gauss sums and 2-adic stationary phase.</p>
+<p>I also constructed counterexamples identifying limitations of a proposed inverse theorem and multiscale approaches. A fellow Ross participant audited and checked the work.</p>
+      </article>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <article id="model-learner">
+        <p>August – October 2026 · Evidence-based AI-agent learning</p>
+        <h3>Model Learner</h3>
+<p>A local system that learns from AI coding-agent executions using <strong>independently verified task outcomes</strong>. It keeps versioned data records and reproducible execution histories, with automated test verification.</p>
+<p>I developed hierarchical Bayesian models to predict agent success across tasks and configurations, testing uncertainty, calibration, and distribution shift with chronological experiments that avoid using future outcomes.</p>
+<p>The system also uses task-similarity retrieval and cost-aware agent recommendations. I integrated it with the Suffice coding-agent harness and validated the combined workflow with <strong>483 automated tests</strong>.</p>
+      </article>
+<article id="ecc-compiler">
+        <p>June – October 2026 · Finite-field &amp; elliptic-curve hardware compilation</p>
+        <h3>ECC Compiler</h3>
+<p>A compiler that translates finite-field operations and elliptic-curve point and scalar arithmetic into serial hardware state machines. It generates <strong>SystemVerilog and Calyx</strong> implementations over the small fields F<sub>17</sub> and F<sub>19</sub>, allowing exhaustive verification.</p>
+<p>I checked <strong>4,477 hardware transactions</strong> and <strong>120 abort/recovery tests</strong> against independent arithmetic references, and formally verified bounded completion for a Calyx multiplier.</p>
+<p>Register allocation and arithmetic scheduling improvements reduced declared storage by <strong>38.6% for point addition</strong> and <strong>36.3% for scalar multiplication</strong>, while also reducing execution latency.</p>
+      </article>
+<article id="shortcut-lens">
+        <p>September – October 2026 · Causal reliability of SAE explanations</p>
+        <h3>Shortcut Lens</h3>
+<p>A controlled MNIST image-classification benchmark investigating whether sparse autoencoders correctly explain the features a neural network actually relies on. The benchmark uses matched counterfactual images and independently controlled correlations.</p>
+<p>I trained classifiers and sparse autoencoders, then compared causal feature interventions against supervised directions, PCA, and random baselines to measure causal influence, specificity, and preservation of task performance.</p>
+      </article>
+<article id="local-graph-assistant">
+        <p>August – September 2026 · Collaborative project</p>
+        <h3>Local Graph Assistant</h3>
+<p>An LLM-based application for navigating structured data. I co-trained Qwen3 0.6B and 1.7B LoRA models; the 1.7B model achieved <strong>93.3% exact accuracy</strong> and <strong>98% same-record accuracy</strong> on internal benchmarks.</p>
+<p>I collaborated on a 16-crate Rust application with encrypted local storage, hybrid retrieval, and permission-controlled access to structured data.</p>
+      </article>
+      <section>
+<h3 id="skills-title">Tools I work with</h3>
+<dl>
+<dt>Languages</dt>
+<dd>Java, Python, C++, Lean, HTML, Rust, SystemVerilog, JavaScript, LaTeX</dd>
+<dt>Tools &amp; libraries</dt>
+<dd>PyTorch, TensorFlow, NumPy, SciPy, Calyx, PyUncertainNumber, Git, Neovim, Linux, SQLite, Docker, MATLAB</dd></dl></section>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <article id="seven-lakes">
+<p>Expected graduation · May 2028</p>
+<h3>Seven Lakes High School</h3>
+<p>I’m a student at Seven Lakes High School. My work outside the classroom spans mathematics, machine learning, software, and <a href="#science-olympiad">Science Olympiad</a>.</p></article>
+<article id="ross">
+<p>Summer 2026</p>
+<h3>Ross Mathematics Program</h3>
+<p>At Ross, I took advanced courses in <strong>elliptic curves, ergodic theory, and Lean</strong>, and worked with the EC Research Group.</p></article>
+<article id="certifications">
+<h3>Certifications</h3>
+<ul>
+<li>Google AI Essentials</li>
+<li>ISC2 CC</li></ul></article>
+    </section>
+    <section id="activities">
+      <h2>Activities</h2>
+      <article id="stemjump">
+<p>2023 – present · Founder &amp; co-president</p>
+<h3>STEMJUMP</h3>
+<p>I founded <a href="https://www.stemjump.org/">STEMJUMP</a>, a student-led nonprofit delivering affordable STEM programs to young students. I was elected co-president and have led <strong>50+ members</strong> in teaching and organizing programs.</p>
+<p>We’ve raised and donated <strong>more than $63,000</strong> for local STEM education and conducted <strong>125+ programs for 1,500+ students</strong>, including weeklong hands-on science and robotics camps.</p>
+<p>Our in-person programs expanded to <strong>Fulshear, Houston, and Katy</strong>. Virtual classes have reached students across the country, including California, New York, Oregon, and Texas. I teach mathematics, physics, and chemistry to younger students.</p>
+<p>I also published <em>Science Experiments</em> on Amazon, with <strong>58 hands-on experiments</strong>. The book is used as a textbook for STEMJUMP camps and received a <strong>five-star rating from Readers’ Favorite</strong>.</p></article>
+<article id="science-olympiad">
+<p>Seven Lakes High School</p>
+<h3>Science Olympiad</h3>
+<p>Our Seven Lakes team won the <strong>2025 National Championship</strong> and the <strong>2026 Texas State Championship</strong>. I competed in Materials Science, Optics, Wind Power, and Forensics.</p>
+<section>
+<h4>Materials Science</h4>
+<ul>
+<li>8th at UT (2026)</li>
+<li>2nd at UT (2025)</li>
+<li>1st at Highlands (2025)</li>
+<li>3rd at Rickards (2025)</li>
+<li>9th at MIT (2025)</li>
+<li>6th at GGSO (2025)</li>
+<li>13th at Nationals (2025)</li></ul></section>
+<section>
+<h4>Optics</h4>
+<ul>
+<li>1st at UT (2025)</li>
+<li>8th at Rickards (2025)</li>
+<li>7th at MIT (2025)</li>
+<li>2nd at State (2025)</li>
+<li>21st at Nationals (2025)</li></ul></section>
+<section>
+<h4>Wind Power</h4>
+<ul>
+<li>2nd at UT (2025)</li>
+<li>2nd at Dulles (2025)</li>
+<li>16th at Nationals (2025)</li></ul></section>
+<section>
+<h4>Forensics</h4>
+<ul>
+<li>3rd at UT (2026)</li>
+<li>2nd at UT (2025)</li></ul></section></article>
+<article id="math-competitions">
+<p>Team competitions</p>
+<h3>Mathematics competitions</h3>
+<p><strong>Texas A&amp;M Power Team:</strong> 2nd place in 2026 and 5th place in 2025.</p>
+<p><strong>Purple Comet:</strong> 2nd place.</p></article>
+<article id="school-leadership">
+<h3>School leadership</h3>
+<dl>
+<dt>National Honor Society</dt>
+<dd>Vice president</dd>
+<dt>NCHS</dt>
+<dd>Representative</dd></dl></article>
+    </section>
+    <section id="miscellaneous">
+      <h2>Miscellaneous</h2>
+      <p>A few photographs from Ross, Science Olympiad, and elsewhere:</p>
+      <ul>
+    <li><a href="../assets/images/carter-rocks-original.jpg">Portrait beside the water</a></li>
+    <li><a href="../assets/images/ross-dhruv-goel.jpg">With Dhruv Goel at Ross (2026)</a></li>
+    <li><a href="../assets/images/ross-lecturer-hallway.jpg">With Vitaly Bergelson at Ross</a></li>
+    <li><a href="../assets/images/ross-lecturer-classroom.jpg">With Po Shen Loh at Ross</a></li>
+    <li><a href="../assets/images/science-olympiad-team.jpeg">The 2025 Science Olympiad national championship team</a></li>
+    <li><a href="../assets/images/science-olympiad-partners.jpeg">With my brother, Bill Sun</a></li>
+    <li><a href="../assets/images/science-olympiad-trophy.jpg">With my brother, Bill Sun, and the trophy</a></li>
+    <li><a href="../assets/images/mosaic.jpeg">Color and geometry</a></li>
+    <li><a href="../assets/images/golden-gate.jpg">At the Golden Gate Bridge</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p><a href="#top">Back to top</a> | <a href="../index.html">Designed version</a></p>
+  </footer>
+</body>
+</html>

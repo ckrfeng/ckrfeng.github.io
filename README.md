@@ -16,7 +16,7 @@ Run `python3 -m http.server 8000` from this folder, then open http://localhost:8
 - `misc.html`: personal photographs.
 - `style.css`: shared typography, paper texture, responsive layouts, and accessibility states.
 
-The résumé and Carter’s follow-up provide biographical content, project details, Science Olympiad and mathematics results, certifications, and school leadership roles. The newer follow-up supplies the STEMJUMP figures (50+ members and more than $63,000 raised and donated) and the 2023 founding date. The Ross chalkboard photo shows Dhruv Goel, per Carter’s correction. The two other lecturers are not individually named. NCHS is left as supplied because its full name was not provided. Purple Comet has no year because none was supplied. No roles or results are inferred from photographs.
+The résumé and Carter’s follow-up provide biographical content, project details, Science Olympiad and mathematics results, certifications, and school leadership roles. The newer follow-up supplies the STEMJUMP figures (50+ members and more than $63,000 raised and donated) and the 2023 founding date. The Ross chalkboard photo shows Dhruv Goel, per Carter’s correction. The two other Ross photos show Vitaly Bergelson and Po Shen Loh, respectively. The paired portrait and trophy photo show Carter with his brother Bill Sun, per Carter’s correction. NCHS is left as supplied because its full name was not provided. Purple Comet has no year because none was supplied. No roles or results are inferred from photographs.
 
 Fonts are self-hosted Bodoni Moda, PT Serif, and Jost under the SIL Open Font License; licenses are in `assets/fonts/`. The paper texture is procedural SVG noise. No build tools are required. `assets/section-progress.js` adds the active entry-number state on Projects and Research; page content remains readable without JavaScript.
 
@@ -35,3 +35,7 @@ The Ross Book Prize/review-session paragraph was removed at Carter’s request.
 ## Numbered entries
 
 Projects and Research use 01–04 markers in a left-hand column, with metadata below each number. The entry nearest the viewport’s reading position is red (#c8102e); other numbers are gray. Scroll and resize checks are batched through requestAnimationFrame. Native anchor links and browser history restoration update the same state. The 160ms CSS color transition is shortened for reduced-motion preferences.
+
+## Text version
+
+`text/index.html` is a separate single-page version inspired by https://motherfuckingwebsite.com/. It uses browser-default HTML, with no CSS, JavaScript, web fonts, or embedded images. All existing research, projects, education, activities, results, and skills are included; photographs are available through ordinary links. Preview at http://localhost:8000/text/. The designed site links to it in the footer.
